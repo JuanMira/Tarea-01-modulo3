@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: #ececec;
+  border-radius: 15px;
+  width: 50%;
+  height: 50%;
+  display: block;
+  text-align: center;
+  padding: 20px;  
+    
+}
+
+.card-title{
+    font-weight: 400;
+    color: #4b4b4b;
+
+}
+
+.card-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 3%;
+}
+
+.card-body .money{
+    width: 60%;    
+    border-radius: 5px;
+    border: 2px solid #686868;
+    padding: 6px;
+    font-size: 1.5rem;
+}
+
+.card-body .money:focus{
+    border: 2px solid #4b4b4b;
+}
+
+
+
+.card-body .money.error{
+    width: 60%;    
+    border-radius: 5px;
+    border: 2px solid #aa0e0e;
+    padding: 6px;
+    font-size: 1.5rem;
+}
+
+.card-body .money:focus.error{
+    border: 2px solid #4b4b4b;
+}
+
+.card-actions{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 20px;
+    margin-top: 15px;    
+}
+
+.button{
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background: #32a852;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1.2rem;   
+    transition: all 0.5s ease; 
+}
+
+.button:hover{
+    background: #278340;
+}
+
+.box{
+    background: #c4c4c4;
+    height: 4em;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.success {
+    color: #32a852;
+}
+
+.error{
+    color: #aa0e0e;
+}
+
+@media screen and (max-width: 920px) {
+  .card {
+    width: 70%;
+    background: #ececec;
+    border-radius: 15px;    
+    height: 70%;
+    display: block;
+  }
+
+  .card-body .money{
+      width: 80%;
+  }
+
+  .card-actions{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 20px;
+    margin-top: 15px;   
+  }
+
+  .box{
+    background: #c4c4c4;
+    height: 3em;
+    border-radius: 10px;
+    padding: 4px;
+  }
+}
